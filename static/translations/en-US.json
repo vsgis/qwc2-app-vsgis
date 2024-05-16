@@ -64,7 +64,8 @@
     "colorschemes": {
       "default": "Default",
       "dark": "Dark",
-      "highcontrast": "High contrast"
+      "highcontrast": "High contrast",
+      "vsgiscolors": "VSGIS"
     },
     "app": {
       "missingbg": "Unable to find the background \"{0}\", displaying the default background.",

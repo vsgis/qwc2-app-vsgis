@@ -64,7 +64,8 @@
     "colorschemes": {
       "default": "Standard",
       "dark": "Dunkel",
-      "highcontrast": "Hochkontrast"
+      "highcontrast": "Hochkontrast",
+      "vsgiscolors": "VSGIS"
     },
     "app": {
       "missingbg": "Der Hintergrund \"{0}\" konnte nicht gefunden werden, der Standardhintergrund wird angezeigt.",

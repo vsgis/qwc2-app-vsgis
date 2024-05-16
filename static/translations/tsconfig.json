@@ -1,29 +1,13 @@
 {
-  "languages": [
-    "de-DE",
-    "de-CH",
-    "en-US",
-    "es-ES",
-    "fr-FR",
-    "it-IT",
-    "pl-PL",
-    "pt-BR",
-    "pt-PT",
-    "ro-RO",
-    "ru-RU",
-    "sv-SE",
-    "tr-TR",
-    "cs-CZ"
-  ],
+  "languages": ["de-CH", "en-US", "fr-FR"],
   "extra_strings": [
     "appmenu.items.ExternalLink",
     "search.coordinates",
     "colorschemes.default",
     "colorschemes.dark",
-    "colorschemes.highcontrast"
+    "colorschemes.highcontrast",
+    "colorschemes.vsgiscolors"
   ],
-  "overrides": [
-    "bottombar.viewertitle_label"
-  ],
+  "overrides": ["bottombar.viewertitle_label"],
   "strings": []
 }
