@@ -1,0 +1,24 @@
+div.newspopup-dialog-popup-body > div.newspopup-dialog-popup-buttonbar button {
+    color: black !important;
+}
+
+#MapCopyright {
+    visibility: hidden !important;
+}
+
+.logo {
+    margin-left: 1em;
+}
+
+.logo-instance {
+    position: fixed;
+    bottom: 3em;
+    left: 1em;
+    padding: 0.5em;
+    background-color: #ffffffaa;
+    border-radius: 0.5em;
+}
+
+.logo-instance-img {
+    max-height: 3em;
+}

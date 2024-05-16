@@ -35,7 +35,7 @@
   "wmsHidpi": false,
   "wmsMaxGetUrlLength": 2048,
   "qgisServerVersion": 3,
-  "defaultColorScheme": "default",
+  "defaultColorScheme": "vsgis",
   "username": "admin",
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
@@ -48,7 +48,10 @@
     "textFont": "11pt sans-serif"
   },
   "importLayerUrlPresets": [
-    {"label": "Swisstopo WMTS", "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"}
+    {
+      "label": "Swisstopo WMTS",
+      "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"
+    }
   ],
   "projections": [
     {
@@ -128,29 +131,54 @@
         "name": "TopBar",
         "cfg": {
           "menuItems": [
-            {"key": "Portal", "icon": "themes"},
-            {"key": "ThemeSwitcher", "icon": "themes", "shortcut": "alt+shift+t"},
-            {"key": "LayerTree", "icon": "layers", "shortcut": "alt+shift+l"},
-            {"key": "MapLegend", "icon": "list-alt"},
-            {"key": "LayerCatalog", "icon": "catalog", "shortcut": "alt+shift+c"},
-            {"key": "FeatureSearch", "icon": "search"},
-            {"key": "Share", "icon": "share", "shortcut": "alt+shift+s"},
-            {"key": "Bookmark", "icon": "bookmark", "shortcut": "alt+shift+b"},
-            {"key": "Tools", "icon": "tools", "subitems": [
-              {"key": "Identify", "icon": "identify_region", "mode": "Region"},
-              {"key": "TimeManager", "icon": "clock"},
-              {"key": "Measure", "icon": "measure"},
-              {"key": "Redlining", "icon": "draw"},
-              {"key": "Editing", "icon": "editing"},
-              {"key": "FeatureForm", "icon": "featureform"},
-              {"key": "AttributeTable", "icon": "editing"},
-              {"key": "MapExport", "icon": "rasterexport"},
-              {"key": "Routing", "icon": "routing"}
-            ]},
-            {"key": "Print", "icon": "print", "shortcut": "alt+shift+p"},
-            {"key": "Help", "icon": "info", "shortcut": "alt+shift+h"},
-            {"key": "Settings", "icon": "cog"},
-            {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$", "target": "iframe"}
+            { "key": "Portal", "icon": "themes" },
+            {
+              "key": "ThemeSwitcher",
+              "icon": "themes",
+              "shortcut": "alt+shift+t"
+            },
+            { "key": "LayerTree", "icon": "layers", "shortcut": "alt+shift+l" },
+            { "key": "MapLegend", "icon": "list-alt" },
+            {
+              "key": "LayerCatalog",
+              "icon": "catalog",
+              "shortcut": "alt+shift+c"
+            },
+            { "key": "FeatureSearch", "icon": "search" },
+            { "key": "Share", "icon": "share", "shortcut": "alt+shift+s" },
+            {
+              "key": "Bookmark",
+              "icon": "bookmark",
+              "shortcut": "alt+shift+b"
+            },
+            {
+              "key": "Tools",
+              "icon": "tools",
+              "subitems": [
+                {
+                  "key": "Identify",
+                  "icon": "identify_region",
+                  "mode": "Region"
+                },
+                { "key": "TimeManager", "icon": "clock" },
+                { "key": "Measure", "icon": "measure" },
+                { "key": "Redlining", "icon": "draw" },
+                { "key": "Editing", "icon": "editing" },
+                { "key": "FeatureForm", "icon": "featureform" },
+                { "key": "AttributeTable", "icon": "editing" },
+                { "key": "MapExport", "icon": "rasterexport" },
+                { "key": "Routing", "icon": "routing" }
+              ]
+            },
+            { "key": "Print", "icon": "print", "shortcut": "alt+shift+p" },
+            { "key": "Help", "icon": "info", "shortcut": "alt+shift+h" },
+            { "key": "Settings", "icon": "cog" },
+            {
+              "key": "ExternalLink",
+              "icon": "link",
+              "url": "http://example.com?extent=$e$",
+              "target": "iframe"
+            }
           ],
           "searchOptions": {
             "allowSearchFilters": false,
@@ -240,7 +268,7 @@
           "allowImport": true,
           "groupTogglesSublayers": false,
           "grayUnchecked": false,
-          "layerInfoWindowSize": {"width": 480, "height": 400},
+          "layerInfoWindowSize": { "width": 480, "height": 400 },
           "bboxDependentLegend": true,
           "scaleDependentLegend": "theme",
           "showToggleAllLayersCheckbox": true,
@@ -316,7 +344,7 @@
           "defaultFormat": "image/png",
           "formatConfiguration": {
             "application/dxf": [
-              {"name": "default"},
+              { "name": "default" },
               {
                 "name": "Geobau",
                 "extraQuery": "LAYERS=dxfgeobau",
@@ -328,8 +356,8 @@
               }
             ],
             "image/png": [
-              {"name": "default"},
-              {"name": "With baselayer", "baseLayer": "SWISSIMAGE"}
+              { "name": "default" },
+              { "name": "With baselayer", "baseLayer": "SWISSIMAGE" }
             ]
           }
         }
@@ -399,7 +427,16 @@
         "cfg": {
           "markerConfiguration": {
             "markersAvailable": true,
-            "gradient": ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],
+            "gradient": [
+              "#f7af7d",
+              "#eacc6e",
+              "#fef89a",
+              "#c5e09b",
+              "#a3d29c",
+              "#7cc096",
+              "#79c8c5",
+              "#34afce"
+            ],
             "markerOffset": [0, 0],
             "markerPins": true
           },
@@ -442,25 +479,50 @@
       },
       {
         "name": "Portal",
-          "cfg": {
+        "cfg": {
           "logo": "logo.svg",
           "topBarText": "QWC2 Demo Portal",
           "showMenuOnStartup": true,
           "keepMenuOpen": true,
           "bottomBarLinks": [
-              {"href": "http://www.example.com", "label": "Example.com", "target": "iframe"},
-              {"href": "http://www.test.com", "label": "Test.com"}
+            {
+              "href": "http://www.example.com",
+              "label": "Example.com",
+              "target": "iframe"
+            },
+            { "href": "http://www.test.com", "label": "Test.com" }
           ],
           "menuItems": [
-              {"key": "Help", "icon": "info", "url": "http://example.com"},
-              {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$"},
-              {"key": "IframeLink", "icon": "link", "url": "http://example.com", "target": "iframe"},
-              {"key": "Tools", "icon": "tools", "subitems": [
-                {"key": "ExternalLink2", "icon": "link", "url": "http://example.com?extent=$e$"},
-                {"key": "ExternalLink3", "icon": "link", "url": "http://example.com?extent=$e$"}
-              ]}
+            { "key": "Help", "icon": "info", "url": "http://example.com" },
+            {
+              "key": "ExternalLink",
+              "icon": "link",
+              "url": "http://example.com?extent=$e$"
+            },
+            {
+              "key": "IframeLink",
+              "icon": "link",
+              "url": "http://example.com",
+              "target": "iframe"
+            },
+            {
+              "key": "Tools",
+              "icon": "tools",
+              "subitems": [
+                {
+                  "key": "ExternalLink2",
+                  "icon": "link",
+                  "url": "http://example.com?extent=$e$"
+                },
+                {
+                  "key": "ExternalLink3",
+                  "icon": "link",
+                  "url": "http://example.com?extent=$e$"
+                }
+              ]
+            }
           ]
-      }
+        }
       }
     ],
     "mobile": [
@@ -505,10 +567,10 @@
         "name": "TopBar",
         "cfg": {
           "toolbarItems": [
-            {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
-            {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
-            {"key": "Print", "icon": "print"},
-            {"key": "Identify", "icon": "identify_region", "mode": "Region"}
+            { "key": "Measure", "mode": "LineString", "icon": "measure_line" },
+            { "key": "Measure", "mode": "Polygon", "icon": "measure_polygon" },
+            { "key": "Print", "icon": "print" },
+            { "key": "Identify", "icon": "identify_region", "mode": "Region" }
           ]
         }
       }
