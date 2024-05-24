@@ -1,5 +1,9 @@
 {
-  "languages": ["de-CH", "en-US", "fr-FR"],
+  "languages": [
+    "de-CH",
+    "en-US",
+    "fr-FR"
+  ],
   "extra_strings": [
     "appmenu.items.ExternalLink",
     "search.coordinates",
@@ -8,6 +12,8 @@
     "colorschemes.highcontrast",
     "colorschemes.vsgiscolors"
   ],
-  "overrides": ["bottombar.viewertitle_label"],
+  "overrides": [
+    "bottombar.viewertitle_label"
+  ],
   "strings": []
 }
